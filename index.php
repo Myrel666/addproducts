@@ -1,3 +1,7 @@
+<?php 
+include 'controller.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +24,15 @@
                             <div id="show_item">
                                 <div class="row">
                                     <div class="col-md-4 mb-3">
-                                        <input type="text" name="product_name[]" class="form-control" placeholder="Item Name" required>
+                                        <!-- <input type="text" name="product_name[]" class="form-control" placeholder="Item Name" required> -->
+                                        <select name="product_name[]" class="form-select" required>
+                                            <option value="">Pilih Nama Item</option>
+                                                <?php
+                                                    foreach ($items as $item) {
+                                                        echo "<option value=\"$item\">$item</option>";
+                                                    }
+                                                ?>
+                                        </select>
                                     </div>
                                     <div class="col-md-3 mb-3">
                                         <input type="number" name="product_price[]" class="form-control" placeholder="Item Price" required>
