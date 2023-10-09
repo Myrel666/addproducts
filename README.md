@@ -1,4 +1,4 @@
-# addproducts
+# Add Products Dinamically (AJAX & PHP)
 
 build with ajax and php. simple web you can add item dinamically.
 
