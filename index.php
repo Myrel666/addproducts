@@ -24,7 +24,7 @@ include 'controller.php'
                             <div id="show_item">
                                 <div class="row">
                                     <div class="col-md-4 mb-3">
-                                        <!-- <input type="text" name="product_name[]" class="form-control" placeholder="Item Name" required> -->
+                                        <!-- <input type="text" name="product_name[]" class="form-control" placeholder="Item Name" required> //jika input manual, nyalakan baris ini-->
                                         <select name="product_name[]" class="form-select" required>
                                             <option value="">Pilih Nama Item</option>
                                                 <?php
